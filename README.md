@@ -1,6 +1,6 @@
 
 
-## Funkce
+ Funkce
 
 - Moderní a responsivní design
 - Přehled sekcí: O mně, Projekty, Kontakt
@@ -9,17 +9,17 @@
 
 ---
 
-## Instalace a spuštění
+ Instalace a spuštění
 
-1. Klonuj repo:
+  1. Klonuj repo:
 
              git clone git@github.com:DanielOdstrcil/Portfolio_angular.git
 
-	2.	Nainstaluj závislosti:
+  2.	Nainstaluj závislosti:
 
             npm install
 
-	3.	Spusť projekt:
+  3.	Spusť projekt:
 
             ng serve
 
