@@ -1,0 +1,141 @@
+:host {
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  .about-container {
+    height: 100%;
+    width: 100%;
+    padding: 0 42px;
+    overflow-y: auto;
+
+    @media (max-width: 1024px) {
+      padding: 0 20px;
+    }
+
+    @media (max-width: 425px) {
+      padding: 0 20px;
+    }
+
+    .about-title {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      font-size: 10em;
+      box-shadow: 0 1px 0;
+      cursor: default;
+
+      @media (max-width: 1024px) {
+        font-size: 7em;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 5em;
+      }
+
+      @media (max-width: 425px) {
+        font-size: 3em;
+      }
+    }
+
+    .about-content {
+      display: grid;
+      grid-template-columns: 15% 85%;
+      margin-top: 2em;
+      padding-bottom: 2em;
+
+      @media (max-width: 1024px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 2em;
+      }
+
+      .about-img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+
+        @media (max-width: 1024px) {
+          grid-row: 2;
+          max-width: 100%;
+        }
+      }
+
+      .about-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        cursor: default;
+        gap: 2em;
+
+        @media (max-width: 1024px) {
+          align-items: flex-start;
+          grid-row: 1;
+        }
+
+        @media (max-width: 425px) {
+          gap: 1.5em;
+        }
+
+        .about-desc-one,
+        .about-desc-two,
+        .about-desc-three {
+          font-size: 1.5em;
+          text-align: justify;
+          line-height: 1.5em;
+
+          @media (max-width: 768px) {
+            font-size: 1.2em;
+          }
+
+          @media (max-width: 425px) {
+            font-size: 1em;
+            text-align: left;
+          }
+        }
+
+        .about-desc-one {
+          display: flex;
+          width: 70%;
+
+          @media (max-width: 1024px) {
+            width: 100%;
+          }
+
+          p {
+            margin-bottom: 0;
+          }
+        }
+
+        .about-desc-two {
+          width: 100%;
+
+          @media (max-width: 1024px) {
+            width: 100%;
+          }
+
+          p {
+            margin: 0;
+          }
+        }
+
+        .about-desc-three {
+          width: 100%;
+
+          @media (max-width: 1024px) {
+            width: 100%;
+          }
+
+          p {
+            margin-top: 0;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

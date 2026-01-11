@@ -1,0 +1,23 @@
+<div class="header-container">
+  <div class="header-content">
+    <div class="grid-one">
+      <div class="header-logo">
+        <a href="/">daniel</a>
+      </div>
+    </div>
+    <div class="grid-two">
+      <div class="header-anchor-links">
+        <a routerLink="/work" routerLinkActive="active-link">Moje projekty</a>
+        <a routerLink="/about" routerLinkActive="active-link">O mě</a>
+        <a routerLink="/contact" routerLinkActive="active-link">Kontakt</a>
+      </div>
+      <div class="header-theme-switcher">
+        <app-theme-switcher
+          #darkModeSwitch
+          (darkModeSwitched)="callSwitchMode($event)"
+          [isDarkMode]="themeService.isDarkMode"
+        ></app-theme-switcher>
+      </div>
+    </div>
+  </div>
+</div>
